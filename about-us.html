@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dreamteam by Ife-DreamTeam</title>
+	<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
+	<style>
+	img.face{border-radius:60px} 
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 50%; list-style-type: none; z-index: 70;transform:translateY(-50%);}
+#menu li { margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 36px "Microsoft Yahei"; color: #fff; padding-left: 100px;}
+</style>
+
+	<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
+
+
+    <script type="text/javascript">
+   $(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['merber1', 'merber2', 'merber3', 'merber4'],
+		menu: '#menu'
+	});
+});
+
+</script>
+</head>
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="merber1" class="active"><a href="#merber1">唐三藏</a></li>
+	<li data-menuanchor="merber2"><a href="#merber2">孙悟空</a></li>
+	<li data-menuanchor="merber3"><a href="#merber3">猪八戒</a></li>
+	<li data-menuanchor="merber4"><a href="#merber4">沙悟净</a></li>
+</ul>
+
+<div id="dowebok">
+	<div class="section">
+		<img class="face" width=120 height=120 src="/face/ts.jpg">
+		<h3>唐三藏</h3>
+		<p>玄奘（602年—644年/664年），唐朝著名的三藏法师，汉传佛教历史上最伟大的译师。俗姓陈，本名袆，出生于洛州缑氏县（今河南洛阳偃师境内）。</p>
+	</div>
+	<div class="section">
+		<img class="face" width=120 height=120 src="/face/wk.jpg">
+		<h3>孙悟空</h3>
+		<p>孙悟空是中国最著名的神话角色之一，出自四大古典名著之《西游记》。相传他由开天辟地以来的仙石孕育而生，因带领群猴进入水帘洞而成为众猴之王，号称为 “美猴王”。后来在西牛贺洲拜菩提祖师为师学艺，得名孙悟空，学会地煞七十二变、筋斗云等高超的法术。</p>
+	</div>
+	<div class="section">
+		<img class="face" width=120 height=120 src="/face/bj.jpg">
+		<h3>猪八戒</h3>
+		<p>猪八戒是吴承恩所作《西游记》中的角色。法号悟能，是唐僧的二徒弟，会三十六变，原来是玉皇大帝的天蓬元帅（原文中是天河宪节，并非道经的天蓬真君）。</p>
+	</div>
+	<div class="section">
+		<img class="face" width=120 height=120 src="/face/ss.jpg">
+		<h3>沙悟净</h3>
+		<p>沙悟净，又叫沙僧、沙和尚，是中国四大名著之一——《西游记》中的人物，是中国四大名著《西游记》五主人公之一。</p>
+	</div>
+</div>
+
+
+
+</body>
+</html>
